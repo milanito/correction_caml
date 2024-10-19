@@ -9,3 +9,7 @@ To launch a correction, you need to do the following (for example for 2028)
 ```
 > dune exec correction_2028
 ```
+
+# Details
+
+All corrections function will be in `lib` folder, `bin` folder is used to launch examples

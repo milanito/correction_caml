@@ -1,4 +1,4 @@
 (executables
- (public_names correction_2028 correction_2027)
- (names correction_2028 correction_2027)
+ (public_names correction_2028 correction_2027 correction_2026)
+ (names correction_2028 correction_2027 correction_2026)
  (libraries correction))

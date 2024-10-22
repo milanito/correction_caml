@@ -11,7 +11,7 @@
 
   let insert_nth x i lst =
     if i <= 0 then
-      invalid_arg "i is below 0"
+      invalid_arg "i is below 1"
     else
       let rec insert_rec idx l = match l with
         [] -> failwith "list is too short"

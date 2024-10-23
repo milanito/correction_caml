@@ -1,3 +1,15 @@
+let insert_mult n x lst =
+  if n <= 0 then
+    invalid_arg "n is too low"
+  else
+    let rec ins_rec acc l = match l with
+      [] -> []
+      | a :: q -> if acc = n then
+                    a :: x ::(ins_rec 1 q) 
+                  else
+                    a :: (ins_rec (acc + 1) q)
+    in ins_rec 1 lst ;;
+
 let rec remove_x x lst = match lst with
   [] -> []
   | a :: q -> if a = x then remove_x x q else a :: (remove_x x q) ;;
